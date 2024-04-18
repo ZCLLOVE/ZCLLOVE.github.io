@@ -17,7 +17,9 @@ def format_output(mod_numbers):
     return '\n'.join(output_lines)
 
 # 传入字符串示例
-input_string = ''''''
+input_string = '''
+
+'''
 
 # 提取模组编号
 mod_numbers = extract_mod_numbers(input_string)
