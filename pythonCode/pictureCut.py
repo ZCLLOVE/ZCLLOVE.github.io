@@ -20,10 +20,10 @@ def resize_images_in_folder(folder_path, size):
                 img = img.convert('RGB')
             img = crop_to_square(img)
             img = img.resize(size, Image.LANCZOS)
-            newName = "a" + str(count) +'.jpg'
+            newName = "a" + str(count) +'.png'
             img.save(os.path.join(folder_path, newName))
             count += 1
 folder_path = 'C:\\Users\\29510\\Desktop\\照片'
-size=(50, 50)
+size=(240, 240)
 # 使用方法
 resize_images_in_folder(folder_path,size)
